@@ -32,7 +32,7 @@ body {
   padding: 1.5rem 1.25rem;
 }
 
-.brand-logo{
+.brand-logo {
   max-width: 80px;
   display: block;
 }
@@ -47,4 +47,84 @@ body {
 
 .navigation__link {
   color: var(--color-primary-1);
+  font-size: 0.9rem;
+  font-family: var(--font-accent);
+  font-weight: 400;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__img-container {
+  width: 100%;
+  margin-top: 5rem;
+  padding: 1rem 2.5rem;
+}
+
+.img--section {
+  max-width: 100%;
+}
+
+.section__text-container {
+  text-align: center;
+  padding-top: 0;
+  color: var(--color-primary-1);
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.heading--hero {
+  margin-inline: 1.5rem;
+}
+
+.copy--hero {
+  font-size: 0.9rem;
+  margin: 1rem 2rem;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 2rem;
+}
+
+.cta__input,
+.cta__button {
+  font-family: var(--font-accent);
+  height: 2.5rem;
+  border-radius: 5px;
+}
+
+.cta__input {
+  padding-left: 1.3rem;
+  border: solid 1px var(--color-primary-2);
+  color: var(--color-neutral-2);
+}
+
+.cta__button {
+  background-color: var(--color-accent-1);
+  color: var(--color-neutral-1);
+  border: none;
+  font-weight: 700;
+  box-shadow: 3px 3px 3px var(--color-neutral-2);
+}
+
+.img--divider-desktop {
+  display: none;
+}
+
+.img--divider-mobile {
+  margin-top: 4rem;
+}
+
+.section--benefits {
+  background-color: var(--color-neutral-1);
+  padding-block: 3rem;
+
 }
