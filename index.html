@@ -41,49 +41,114 @@
         <img class="img--section" src="./assets/img/illustration-1.svg" />
       </div>
       <div class="section__text-container">
-        <h1 class="heading heading--hero">All your files in one secure location, accessible anywhere.</h1>
+        <h1 class="heading heading--hero">
+          All your files in one secure location, accessible anywhere.
+        </h1>
         <p class="copy--hero">
           Fylo stores your most important files in one secure location. Access
           them wherever you need, share and collaborate with friends, family,
           and co-workers.
         </p>
         <div class="cta">
-          <input class="cta__input" type="text" placeholder="Enter your email..." />
+          <input
+            class="cta__input"
+            type="text"
+            placeholder="Enter your email..."
+          />
           <button class="cta__button">Get Started</button>
         </div>
       </div>
-      <img class="img--divider-desktop" src="./assets/img/bg-curve-desktop.svg" alt="" />
-      <img class="img--divider-mobile" src="./assets/img/bg-curve-mobile.svg" alt="" />
+      <img
+        class="img--divider-desktop"
+        src="./assets/img/bg-curve-desktop.svg"
+        alt=""
+      />
+      <img
+        class="img--divider-mobile"
+        src="./assets/img/bg-curve-mobile.svg"
+        alt=""
+      />
     </section>
 
     <section class="section section--benefits">
-      <div><img class="img--section" src="./assets/img/illustration-2.svg" alt="" /></div>
-      <div>
-        <h2>Stay productive, wherever you are</h2>
-        <p>
-          Never let location be an issue when accessing your files. Fylo has you
-          covered for all of your file storage needs.
-        </p>
-        <p>
-          Securely share files and folders with friends, family and colleagues
-          for live collaboration. No email attachments required!
-        </p>
-        <a href=""
-          >See how Fylo works <img src="./assets/img/icon-arrow.svg"
-        /></a>
-        <div>
-          <img src="./assets/img/icon-quotes.svg" alt="" />
+      <div class="section__img-container">
+        <img
+          class="img--section"
+          src="./assets/img/illustration-2.svg"
+          alt=""
+        />
+      </div>
+      <div class="section__text-container">
+        <h2 class="heading heading--benefits">
+          Stay productive, wherever you are
+        </h2>
+        <div class="copy copy--benefits">
           <p>
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+          </p>
+          <p>
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required!
+          </p>
+        </div>
+        <div class="copy__link-container">
+          <p class="copy__link">
+            <a class="copy__link-text" href=""
+              >See how Fylo works
+              <svg
+                class="copy__link-icon"
+                width="16"
+                height="16"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs>
+                  <circle id="b" cx="6" cy="6" r="6" />
+                  <filter
+                    x="-25%"
+                    y="-25%"
+                    width="150%"
+                    height="150%"
+                    filterUnits="objectBoundingBox"
+                    id="a"
+                  >
+                    <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                    <feGaussianBlur
+                      stdDeviation="1"
+                      in="shadowOffsetOuter1"
+                      result="shadowBlurOuter1"
+                    />
+                    <feColorMatrix
+                      values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
+                      in="shadowBlurOuter1"
+                    />
+                  </filter>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <g transform="translate(2 2)">
+                    <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                    <use fill="#3DA08F" xlink:href="#b" />
+                  </g>
+                  <path
+                    d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
+                    fill="#FFF"
+                  />
+                </g></svg
+            ></a>
+          </p>
+        </div>
+        <div class="testimonial">
+          <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg"><text transform="translate(-34 -25)" fill="#07043B" fill-rule="evenodd" font-family="Helvetica" font-size="45"><tspan x="33" y="56">“</tspan></text></svg>
+          <p class="testimonial__quote">
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
             collaboration machine.
           </p>
-          <div>
-            <img src="./assets/img/avatar-testimonial.jpg" alt="" />
-            <div>
-              <p>Kyle Burton</p>
-              <p>Founder & CEO, Huddle</p>
-            </div>
+          <div class="testimonial__author">
+            <img class="testimonial__img" src="./assets/img/avatar-testimonial.jpg" alt="" />
+              <p class="testimonial__name">Kyle Burton</p>
+              <p class="testimonial__title">Founder & CEO, Huddle</p>
           </div>
         </div>
       </div>

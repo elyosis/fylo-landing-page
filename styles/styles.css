@@ -25,11 +25,14 @@ body {
   margin: 0;
 }
 
+/* HEADER */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 1.25rem;
+  margin-bottom: 4rem;
 }
 
 .brand-logo {
@@ -47,10 +50,12 @@ body {
 
 .navigation__link {
   color: var(--color-primary-1);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-family: var(--font-accent);
   font-weight: 400;
 }
+
+/* HERO SECTION */
 
 .section {
   display: flex;
@@ -59,7 +64,6 @@ body {
 
 .section__img-container {
   width: 100%;
-  margin-top: 5rem;
   padding: 1rem 2.5rem;
 }
 
@@ -74,16 +78,19 @@ body {
 }
 
 .heading {
-  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .heading--hero {
+  font-size: 1.5rem;
   margin-inline: 1.5rem;
 }
 
-.copy--hero {
+.copy {
   font-size: 0.9rem;
+}
+
+.copy--hero {
   margin: 1rem 2rem;
 }
 
@@ -123,8 +130,101 @@ body {
   margin-top: 4rem;
 }
 
+/* BENEFITS SECTION */
+
 .section--benefits {
   background-color: var(--color-neutral-1);
-  padding-block: 3rem;
+  padding-block: 2rem;
+}
 
+.heading--benefits {
+  font-size: 1rem;
+  font-family: var(--font-accent);
+  margin-top: 3rem;
+}
+
+.copy--benefits {
+  margin: 1.5rem;
+  text-align: left;
+  color: var(--color-primary-2);
+}
+
+.copy__link-container {
+  display: flex;
+  justify-content: center;
+}
+
+.copy__link {
+  font-size: 0.8rem;
+  width: fit-content;
+  position: relative;
+}
+
+.copy__link::after {
+  content: "";
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-accent-2);
+}
+
+.copy__link-text {
+  color: var(--color-accent-2);
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.copy__link-icon {
+  vertical-align: middle;
+}
+
+.testimonial {
+  margin: 2rem 3rem 3rem 3rem;
+  padding: 1.5rem 0.75rem 1.5rem 1.5rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 20px lightgrey;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.testimonial__quote {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.015rem;
+}
+
+.testimonial__author {
+  display: grid;
+  width: fit-content;
+  grid-template-areas: 
+              "photo name"
+              "photo title";
+}
+
+.testimonial__img {
+  max-width: 35px;
+  border-radius: 50%;
+  grid-area: photo;
+}
+
+.testimonial__name,
+.testimonial__title {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+.testimonial__name {
+  font-size: 0.7rem;
+  font-weight: 700;
+  grid-area: name;
+  align-self: center;
+}
+
+.testimonial__title {
+  grid-area: title;
+  font-size: 0.5rem;
 }
