@@ -1,5 +1,4 @@
 :root {
-
   /* Colors */
   --color-primary-1: hsl(243, 87%, 12%);
   --color-primary-2: hsl(238, 22%, 44%);
@@ -22,4 +21,30 @@
 
 body {
   font-size: var(--font-size);
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.25rem;
+}
+
+.brand-logo{
+  max-width: 80px;
+  display: block;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.navigation__link {
+  color: var(--color-primary-1);
 }
