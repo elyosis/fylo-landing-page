@@ -1,0 +1,25 @@
+:root {
+
+  /* Colors */
+  --color-primary-1: hsl(243, 87%, 12%);
+  --color-primary-2: hsl(238, 22%, 44%);
+
+  --color-accent-1: hsl(224, 93%, 58%);
+  --color-accent-2: hsl(170, 45%, 43%);
+
+  --color-neutral-1: hsl(240, 75%, 98%);
+  --color-neutral-2: hsl(0, 0%, 75%);
+
+  /* Typography */
+  --font-size: 16px;
+  --font-accent: "Raleway", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--font-size);
+}
