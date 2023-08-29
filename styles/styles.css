@@ -52,10 +52,13 @@ html {
 }
 
 .navigation__link {
+  text-decoration: none;
   color: var(--color-primary-1);
-  font-size: 0.8rem;
   font-family: var(--font-accent);
-  font-weight: 400;
+}
+
+.navigation__link:hover {
+  color: var(--color-hover-link);
 }
 
 /* HERO SECTION */
