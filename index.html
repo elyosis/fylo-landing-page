@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -96,46 +95,8 @@
           <p class="copy__link">
             <a class="copy__link-text" href=""
               >See how Fylo works
-              <svg
-                class="copy__link-icon"
-                width="16"
-                height="16"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <defs>
-                  <circle id="b" cx="6" cy="6" r="6" />
-                  <filter
-                    x="-25%"
-                    y="-25%"
-                    width="150%"
-                    height="150%"
-                    filterUnits="objectBoundingBox"
-                    id="a"
-                  >
-                    <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur
-                      stdDeviation="1"
-                      in="shadowOffsetOuter1"
-                      result="shadowBlurOuter1"
-                    />
-                    <feColorMatrix
-                      values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0"
-                      in="shadowBlurOuter1"
-                    />
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                  <g transform="translate(2 2)">
-                    <use fill="#000" filter="url(#a)" xlink:href="#b" />
-                    <use fill="#3DA08F" xlink:href="#b" />
-                  </g>
-                  <path
-                    d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
-                    fill="#FFF"
-                  />
-                </g></svg
-            ></a>
+              <img class="copy__link-icon" src="./assets/img/icon-arrow.svg" alt="" srcset="">
+              </a>
           </p>
         </div>
         <div class="testimonial">
@@ -169,19 +130,19 @@
       </div>
     </section>
 
-    <footer>
+    <footer class="footer">
       <div>
-        <img src="./assets/img/logo.svg" />
+        <img class="brand-logo--footer" src="./assets/img/logo.svg" />
       </div>
       <div>
-        <p>
-          <img src="./assets/img/icon-phone.svg" alt="" /> Phone:
-          +1-543-123-4567
+        <p class="footer__contact">
+          <img class="footer__contact-icon" src="./assets/img/icon-phone.svg" alt="" /> <span class="footer__contact-text">Phone:
+          +1-543-123-4567</span>
         </p>
-        <p><img src="./assets/img/icon-email.svg" /> example@fylo.com</p>
+        <p class="footer__contact"><img class="footer__contact-icon" src="./assets/img/icon-email.svg" /> <span class="footer__contact-text">example@fylo.com</span></p>
       </div>
       <div>
-        <ul>
+        <ul class="footer__links">
           <li>About Us</li>
           <li>Jobs</li>
           <li>Press</li>
@@ -189,17 +150,17 @@
         </ul>
       </div>
       <div>
-        <ul>
+        <ul class="footer__links">
           <li>Contact Us</li>
           <li>Terms</li>
           <li>Privacy</li>
         </ul>
       </div>
       <div>
-        <ul>
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>Instagram</li>
+        <ul class="footer__links footer__links--social">
+          <li class="footer__link--social"><img class="footer__icon" src="./assets/img/facebook.svg" alt="" srcset=""></li>
+          <li class="footer__link--social"><img class="footer__icon" src="./assets/img/twitter.svg" alt="" srcset=""></li>
+          <li class="footer__link--social"><img class="footer__icon" src="./assets/img/instagram.svg" alt="" srcset=""></li>
         </ul>
       </div>
     </footer>

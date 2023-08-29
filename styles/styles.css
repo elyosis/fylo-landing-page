@@ -19,7 +19,8 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   font-size: var(--font-size);
   font-family: var(--font-body);
   margin: 0;
@@ -200,9 +201,9 @@ body {
 .testimonial__author {
   display: grid;
   width: fit-content;
-  grid-template-areas: 
-              "photo name"
-              "photo title";
+  grid-template-areas:
+    "photo name"
+    "photo title";
 }
 
 .testimonial__img {
@@ -248,4 +249,50 @@ body {
 .cta__button--dark-shadow {
   font-size: 0.7rem;
   box-shadow: 1px 1px 3px var(--color-primary-1);
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--color-primary-1);
+  color: var(--color-neutral-1);
+  padding: 2rem;
+}
+
+.brand-logo--footer {
+  margin-block: 2rem 1rem;
+  filter: brightness(0) invert(1);
+}
+
+.footer__contact {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__links--social {
+  flex-direction: row;
+  justify-content: center;
+  margin-block: 2rem 1rem;
+}
+
+.footer__link--social {
+  padding: 0.5rem;
+  border: solid 1px white;
+  border-radius: 50%;
+}
+
+.footer__icon {
+  width: 1rem;
+  display: block;
 }
