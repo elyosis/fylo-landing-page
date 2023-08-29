@@ -1,13 +1,15 @@
 :root {
   /* Colors */
   --color-primary-1: hsl(243, 87%, 12%);
-  --color-primary-2: hsl(238, 22%, 44%);
+  --color-primary-2: hsl(239, 22%, 44%);
 
   --color-accent-1: hsl(224, 93%, 58%);
   --color-accent-2: hsl(170, 45%, 43%);
 
   --color-neutral-1: hsl(240, 75%, 98%);
   --color-neutral-2: hsl(0, 0%, 75%);
+
+  --color-hover-link: #788EFE;
 
   /* Typography */
   --font-size: 16px;
@@ -115,12 +117,21 @@ html {
   color: var(--color-neutral-2);
 }
 
+.cta__input:focus {
+  color: var(--color-primary-1);
+}
+
 .cta__button {
   background-color: var(--color-accent-1);
   color: var(--color-neutral-1);
   border: none;
   font-weight: 700;
   box-shadow: 3px 3px 3px var(--color-neutral-2);
+  cursor: pointer;
+}
+
+.cta__button:hover {
+  filter: brightness(150%);
 }
 
 .img--divider-desktop {
@@ -169,6 +180,12 @@ html {
   height: 1px;
   width: 100%;
   background-color: var(--color-accent-2);
+}
+
+.copy__link-text:hover,
+.copy__link-icon:hover,
+.copy__link:hover::after {
+  filter: brightness(130%);
 }
 
 .copy__link-text {
@@ -280,6 +297,15 @@ html {
   gap: 1rem;
 }
 
+.footer__link {
+  text-decoration: none;
+  color: var(--color-neutral-1);
+}
+
+.footer__link:hover {
+  color: var(--color-hover-link);
+}
+
 .footer__links--social {
   flex-direction: row;
   justify-content: center;
@@ -295,4 +321,9 @@ html {
 .footer__icon {
   width: 1rem;
   display: block;
+}
+
+.footer__link--social:hover,
+.footer__icon:hover {
+  filter: brightness(0) invert(47%) sepia(94%) saturate(767%) hue-rotate(205deg) brightness(101%) contrast(99%);
 }
