@@ -48,13 +48,13 @@
           them wherever you need, share and collaborate with friends, family,
           and co-workers.
         </p>
-        <div class="cta">
+        <div class="form">
           <input
-            class="cta__input"
+            class="form__input"
             type="text"
             placeholder="Enter your email..."
           />
-          <button class="cta__button">Get Started</button>
+          <button class="form__button">Get Started</button>
         </div>
       </div>
       <img
@@ -95,27 +95,46 @@
           <p class="copy__link">
             <a class="copy__link-text" href=""
               >See how Fylo works
-              <img class="copy__link-icon" src="./assets/img/icon-arrow.svg" alt="" srcset="">
-              </a>
+              <img
+                class="copy__link-icon"
+                src="./assets/img/icon-arrow.svg"
+                alt=""
+                srcset=""
+              />
+            </a>
           </p>
         </div>
         <div class="testimonial">
-          <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg"><text transform="translate(-34 -25)" fill="#07043B" fill-rule="evenodd" font-family="Helvetica" font-size="45"><tspan x="33" y="56">“</tspan></text></svg>
+          <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg">
+            <text
+              transform="translate(-34 -25)"
+              fill="#07043B"
+              fill-rule="evenodd"
+              font-family="Helvetica"
+              font-size="45"
+            >
+              <tspan x="33" y="56">“</tspan>
+            </text>
+          </svg>
           <p class="testimonial__quote">
             Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
             collaboration machine.
           </p>
           <div class="testimonial__author">
-            <img class="testimonial__img" src="./assets/img/avatar-testimonial.jpg" alt="" />
-              <p class="testimonial__name">Kyle Burton</p>
-              <p class="testimonial__title">Founder & CEO, Huddle</p>
+            <img
+              class="testimonial__img"
+              src="./assets/img/avatar-testimonial.jpg"
+              alt=""
+            />
+            <p class="testimonial__name">Kyle Burton</p>
+            <p class="testimonial__title">Founder & CEO, Huddle</p>
           </div>
         </div>
       </div>
     </section>
     <section class="section section--cta">
-      <div class="section__text-container">
+      <div class="section__text-container section__text-container--cta">
         <h3 class="heading heading--cta">Get early access today</h3>
         <p class="copy copy--cta">
           It only takes a minute to sign up and our free starter tier is
@@ -123,10 +142,14 @@
           be happy to help you.
         </p>
       </div>
-      <div class="cta">
-        <input class="cta__input" type="text" placeholder="email@example.com" /><button class="cta__button cta__button--dark-shadow">
+      <div class="form form--cta">
+        <input
+          class="form__input form__input--cta"
+          type="text"
+          placeholder="email@example.com"
+        /><button class="form__button form__button--cta">
           Get Started For Free
-        </butto>
+        </button>
       </div>
     </section>
 
@@ -134,34 +157,70 @@
       <div>
         <img class="brand-logo--footer" src="./assets/img/logo.svg" />
       </div>
-      <div>
-        <p class="footer__contact">
-          <img class="footer__contact-icon" src="./assets/img/icon-phone.svg" alt="" /> <span class="footer__contact-text">Phone:
-          +1-543-123-4567</span>
-        </p>
-        <p class="footer__contact"><img class="footer__contact-icon" src="./assets/img/icon-email.svg" /> <span class="footer__contact-text">example@fylo.com</span></p>
-      </div>
-      <div>
-        <ul class="footer__links">
-          <li><a class="footer__link" href="">About Us</a></li>
-          <li><a class="footer__link" href="">Jobs</a></li>
-          <li><a class="footer__link" href="">Press</a></li>
-          <li><a class="footer__link" href="">Blog</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul class="footer__links">
-          <li><a class="footer__link" href="">Contact Us</a></li>
-          <li><a class="footer__link" href="">Terms</a></li>
-          <li><a class="footer__link" href="">Privacy</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul class="footer__links footer__links--social">
-          <li class="footer__link--social"><a class="footer__link" href=""><img class="footer__icon" src="./assets/img/facebook.svg" alt="" srcset=""></a></li>
-          <li class="footer__link--social"><a class="footer__link" href=""><img class="footer__icon" src="./assets/img/twitter.svg" alt="" srcset=""></a></li>
-          <li class="footer__link--social"><a class="footer__link" href=""><img class="footer__icon" src="./assets/img/instagram.svg" alt="" srcset=""></a></li>
-        </ul>
+      <div class="footer__columns">
+        <div class="footer__contact-column">
+          <p class="footer__contact">
+            <img
+              class="footer__contact-icon"
+              src="./assets/img/icon-phone.svg"
+              alt=""
+            />
+            <span class="footer__contact-text">Phone: +1-543-123-4567</span>
+          </p>
+          <p class="footer__contact">
+            <img
+              class="footer__contact-icon"
+              src="./assets/img/icon-email.svg"
+            />
+            <span class="footer__contact-text">example@fylo.com</span>
+          </p>
+        </div>
+        <div>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="">About Us</a></li>
+            <li><a class="footer__link" href="">Jobs</a></li>
+            <li><a class="footer__link" href="">Press</a></li>
+            <li><a class="footer__link" href="">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="">Contact Us</a></li>
+            <li><a class="footer__link" href="">Terms</a></li>
+            <li><a class="footer__link" href="">Privacy</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="footer__links footer__links--social">
+            <li class="footer__link--social">
+              <a class="footer__link" href=""
+                ><img
+                  class="footer__icon"
+                  src="./assets/img/facebook.svg"
+                  alt=""
+                  srcset=""
+              /></a>
+            </li>
+            <li class="footer__link--social">
+              <a class="footer__link" href=""
+                ><img
+                  class="footer__icon"
+                  src="./assets/img/twitter.svg"
+                  alt=""
+                  srcset=""
+              /></a>
+            </li>
+            <li class="footer__link--social">
+              <a class="footer__link" href=""
+                ><img
+                  class="footer__icon"
+                  src="./assets/img/instagram.svg"
+                  alt=""
+                  srcset=""
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

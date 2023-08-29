@@ -103,31 +103,31 @@ html {
   margin: 1rem 2rem;
 }
 
-.cta {
+.form {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  margin: 1.5rem;
+  margin: 2rem;
 }
 
-.cta__input,
-.cta__button {
+.form__input,
+.form__button {
   font-family: var(--font-accent);
   height: 2.5rem;
   border-radius: 5px;
 }
 
-.cta__input {
+.form__input {
   padding-left: 1.3rem;
   border: solid 1px var(--color-primary-2);
   color: var(--color-neutral-2);
 }
 
-.cta__input:focus {
+.form__input:focus {
   color: var(--color-primary-1);
 }
 
-.cta__button {
+.form__button {
   background-color: var(--color-accent-1);
   color: var(--color-neutral-1);
   border: none;
@@ -136,7 +136,7 @@ html {
   cursor: pointer;
 }
 
-.cta__button:hover {
+.form__button:hover {
   filter: brightness(150%);
 }
 
@@ -257,7 +257,7 @@ html {
 
 .section--cta {
   background-color: var(--color-primary-2);
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .heading--cta,
@@ -269,7 +269,7 @@ html {
   font-family: var(--font-accent);
 }
 
-.cta__button--dark-shadow {
+.form__button--cta {
   font-size: 0.7rem;
   box-shadow: 1px 1px 3px var(--color-primary-1);
 }
@@ -287,6 +287,11 @@ html {
   filter: brightness(0) invert(1);
 }
 
+.footer__columns {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer__contact {
   display: grid;
   grid-template-columns: minmax(min-content, auto) 1fr;
@@ -297,7 +302,7 @@ html {
 .footer__links {
   list-style: none;
   padding: 0;
-  margin-block: 3rem;
+  margin-block: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -392,22 +397,23 @@ html {
     margin-inline: 1.5rem;
   }
 
-  .cta {
+  .form {
     flex-direction: row;
+    margin-inline: 1.5rem;
   }
 
-  .cta__input,
-  .cta__button {
+  .form__input,
+  .form__button {
     border-radius: 3px;
   }
 
-  .cta__input {
+  .form__input {
     width: 55%;
     max-width: 20rem;
     font-family: var(--font-body);
   }
 
-  .cta__button {
+  .form__button {
     padding-inline: 3rem;
   }
 
@@ -423,4 +429,78 @@ html {
     width: 100%;
     height: auto;
   }
+
+  /* BENEFITS */
+
+  .copy--benefits {
+    color: var(--color-primary-1);
+  }
+
+  .copy__link-container {
+    justify-content: start;
+    margin-left: 1.5rem;
+  }
+
+  .copy__link {
+    margin: 0;
+  }
+
+  .testimonial {
+    margin: 3rem 2rem 2rem 1.5rem;
+    width: 50%;
+    min-width: 20rem;
+    max-width: 30rem;
+  }
+
+  /* CTA */
+
+.section--cta {
+  display: flex;
+  gap: 5rem;
+}
+
+.copy--cta {
+  margin-inline: 1.5rem;
+}
+
+.section__text-container--cta,
+.form--cta {
+  flex: 1;
+}
+
+.form--cta {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.form__input--cta {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.form__button--cta {
+  width: fit-content;
+  padding-inline: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 5rem;
+}
+
+.brand-logo--footer {
+  margin-block: 1rem;
+}
+
+.footer__columns {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.footer__links {
+  margin-block: 0;
+}
 }
