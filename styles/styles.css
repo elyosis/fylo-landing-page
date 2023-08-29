@@ -9,12 +9,15 @@
   --color-neutral-1: hsl(240, 75%, 98%);
   --color-neutral-2: hsl(0, 0%, 75%);
 
-  --color-hover-link: #788EFE;
+  --color-hover-link: hsl(230, 99%, 73%);
 
   /* Typography */
   --font-size: 16px;
   --font-accent: "Raleway", sans-serif;
   --font-body: "Open Sans", sans-serif;
+
+  /* Breakpoint */
+  --mb-breakpoint: 835px;
 }
 
 * {
@@ -85,11 +88,11 @@ html {
 
 .heading {
   font-weight: 700;
+  margin-inline: 1.5rem;
 }
 
 .heading--hero {
   font-size: 1.5rem;
-  margin-inline: 1.5rem;
 }
 
 .copy {
@@ -286,9 +289,9 @@ html {
 
 .footer__contact {
   display: grid;
-  grid-template-columns: 1fr 8fr;
+  grid-template-columns: minmax(min-content, auto) 1fr;
   align-items: center;
-  gap: 0.4rem;
+  gap: 1rem;
 }
 
 .footer__links {
@@ -328,5 +331,96 @@ html {
 
 .footer__link--social:hover,
 .footer__icon:hover {
-  filter: brightness(0) invert(47%) sepia(94%) saturate(767%) hue-rotate(205deg) brightness(101%) contrast(99%);
+  filter: brightness(0) invert(47%) sepia(94%) saturate(767%) hue-rotate(205deg)
+    brightness(101%) contrast(99%);
+}
+
+@media (min-width: 835px) {
+  /* HEADER */
+
+  .header {
+    padding: 4rem;
+    margin-bottom: 0;
+  }
+
+  .brand-logo {
+    max-width: fit-content;
+  }
+
+  .navigation {
+    gap: 4rem;
+  }
+
+  /* HERO SECTION */
+
+  .section {
+    flex-direction: row;
+    padding-inline: 2rem;
+    align-items: center;
+  }
+
+  .section--hero {
+    position: relative;
+    padding-bottom: 15rem;
+  }
+
+  .section__img-container,
+  .section__text-container {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  .section__text-container {
+    text-align: left;
+  }
+
+  .section__img-container {
+    order: 1;
+  }
+
+  .heading {
+    margin-block: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .heading--hero {
+    font-family: var(--font-accent);
+    line-height: 1.5;
+  }
+
+  .copy--hero {
+    margin-inline: 1.5rem;
+  }
+
+  .cta {
+    flex-direction: row;
+  }
+
+  .cta__input,
+  .cta__button {
+    border-radius: 3px;
+  }
+
+  .cta__input {
+    width: 55%;
+    max-width: 20rem;
+    font-family: var(--font-body);
+  }
+
+  .cta__button {
+    padding-inline: 3rem;
+  }
+
+  .img--divider-mobile {
+    display: none;
+  }
+
+  .img--divider-desktop {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: auto;
+  }
 }
