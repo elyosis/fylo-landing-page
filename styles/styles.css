@@ -71,6 +71,11 @@ html {
   flex-direction: column;
 }
 
+.section--hero {
+  position: relative;
+  padding-bottom: 10rem;
+}
+
 .section__img-container {
   width: 100%;
   padding: 1rem 2.5rem;
@@ -140,12 +145,17 @@ html {
   filter: brightness(150%);
 }
 
-.img--divider-desktop {
-  display: none;
+.img-divider {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: auto;
 }
 
-.img--divider-mobile {
-  margin-top: 4rem;
+.img-divider--desktop {
+  display: none;
 }
 
 /* BENEFITS SECTION */
@@ -417,17 +427,12 @@ html {
     padding-inline: 3rem;
   }
 
-  .img--divider-mobile {
+  .img-divider--mobile {
     display: none;
   }
 
-  .img--divider-desktop {
+  .img-divider--desktop {
     display: block;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: auto;
   }
 
   /* BENEFITS */
@@ -454,53 +459,52 @@ html {
 
   /* CTA */
 
-.section--cta {
-  display: flex;
-  gap: 5rem;
-}
+  .section--cta {
+    display: flex;
+    gap: 5rem;
+  }
 
-.copy--cta {
-  margin-inline: 1.5rem;
-}
+  .copy--cta {
+    margin-inline: 1.5rem;
+  }
 
-.section__text-container--cta,
-.form--cta {
-  flex: 1;
-}
+  .section__text-container--cta,
+  .form--cta {
+    flex: 1;
+  }
 
-.form--cta {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-}
+  .form--cta {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
 
-.form__input--cta {
-  width: 100%;
-  max-width: 30rem;
-}
+  .form__input--cta {
+    width: 100%;
+    max-width: 30rem;
+  }
 
-.form__button--cta {
-  width: fit-content;
-  padding-inline: 2rem;
-}
+  .form__button--cta {
+    width: fit-content;
+    padding-inline: 2rem;
+  }
 
-/* FOOTER */
+  /* FOOTER */
 
-.footer {
-  padding: 5rem;
-}
+  .footer {
+    padding: 5rem;
+  }
 
-.brand-logo--footer {
-  margin-block: 1rem;
-}
+  .brand-logo--footer {
+    margin-block: 1rem;
+  }
 
-.footer__columns {
-  flex-direction: row;
-  justify-content: space-between;
-}
+  .footer__columns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-
-.footer__links {
-  margin-block: 0;
-}
+  .footer__links {
+    margin-block: 0;
+  }
 }
