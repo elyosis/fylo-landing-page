@@ -1,6 +1,6 @@
 # Frontend Mentor - Fylo landing page with two column layout solution
 
-This is a solution to the [Fylo landing page with two column layout challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5).
+This is a solution to the [Fylo landing page with two column layout challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5). The live version of the site can be seen [here](https://elyosis.github.io/fylo-landing-page/).
 
 [Facebook](https://icons8.com/icon/87264/facebook-f), [Twitter](https://icons8.com/icon/102916/twitter) and [Instagram](https://icons8.com/icon/DpOQ6G5p47f0/instagram) icons by [Icons8](https://icons8.com).
 
