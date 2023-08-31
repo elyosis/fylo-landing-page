@@ -15,9 +15,6 @@
   --font-size: 16px;
   --font-accent: "Raleway", sans-serif;
   --font-body: "Open Sans", sans-serif;
-
-  /* Breakpoint */
-  --mb-breakpoint: 835px;
 }
 
 * {
